@@ -1,0 +1,446 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+  values:
+    PENDING_CANCELLATION_DESC: 'This procedure is pending cancellation.'
+    APPROVED_CANCELLATION_DESC: 'Cancellation request approved.'
+    CANCELLATION_INFO: 'Requested to cancel the procedure was approved.'
+    ascensionidpassword: 'B52Cgz!2'
+    userid: 'dsctOFSCH1@ascension.org'
+    username: 'DSSC_OFFICE_SCHEDULER'
+    fileaddedstring: 'successfully added.'
+elements:
+    SPINNER:
+        xpath: //div[contains(@id, 'cover-spin')]
+    ascensionidloginbutton:
+        xpath: //span[@class='sc-bdVaJa kdzqCk'][contains(.,'Log in with Ascension ID')]
+    ascensionidfield:
+        xpath: //input[contains(@id,'userNameInput')]
+    ascensionidpasswordfield:
+        xpath: //input[contains(@id,'passwordInput')]
+    loginbutton:
+        xpath: //span[contains(@id,'submitButton')]
+    requestasurgerybutton:
+        xpath: //button[contains(@id,'requestSurgery')]
+    appointmentdetailsheader:
+        xpath: //span[contains(.,'Appointment Details')]
+    patientdetailsheader:
+        xpath: //span[contains(.,'Patient Details')]
+    surgeryinformationheader:
+        xpath: //span[contains(.,'Surgery Information')]
+    preadmittestingheader:
+        xpath: //span[contains(.,'Pre-Admit Testing Details')]
+    appointmentlocationheader:
+        xpath: //span[contains(.,'Appointment location')]
+    surgerydateandtimeheader:
+        xpath: //span[contains(.,'Requested surgery date and time')]
+    tofollowheader:
+        xpath: (//span[contains(.,'To Follow')])[2]
+    blocktimeheader:
+        xpath: (//span[contains(.,'Block Time')])[2]
+    authstatusheader:
+        xpath: //span[contains(.,'Intended order status/auth status')]
+    selectlocationfield:
+        xpath: //input[contains(@placeholder,'Select Location')]
+    Ascension Saint Thomas Hospital Midtown BH CSC:
+        xpath: //div[contains(text(),'Ascension Saint Thomas Hospital Midtown, BH CSC')]
+    Ascension Saint Thomas Hospital Midtown BH JRI:
+        xpath: //div[contains(text(),'Ascension Saint Thomas Hospital Midtown, BH JRI')]
+    Ascension Saint Thomas Hospital Midtown BH OR:
+        xpath: //div[contains(text(),'Ascension Saint Thomas Hospital Midtown, BH OR')]
+    Ascension Saint Thomas Hospital Midtown STM ENDO:
+        xpath: //div[contains(text(),'Ascension Saint Thomas Hospital Midtown, STM ENDO')]
+    firstlocation:
+        xpath: (//div[@tabindex='0'])[2]
+    appointmentdatefield:
+        xpath: //input[contains(@name,'appointmentDate')]
+    appointmenttimefield:
+        xpath: //input[@name='appointmentTime']
+    meridiemfield:
+        xpath: //input[contains(@value,'A.M.')]
+    MERIDIAN_AM:
+        xpath: //input[contains(@value, 'A.M.')]
+    MERIDIAN_PM:
+        xpath: //input[contains(@value, 'P.M.')]
+    selectstatusfield:
+        xpath: //input[contains(@placeholder,'Select Status')]
+    Inpatient:
+        xpath: //div[@value='Inpatient']
+    Outpatient:
+        xpath: //div[@value='Outpatient']
+    #Observation / 23 hr:
+        xpath: //div[@value='Observation / 23 hr']
+    inpatientstatus:
+        xpath: //div[@value='Inpatient']
+    tofollowcheckbox:
+        xpath: //div[@data-field='Appointment_ToFollow']
+    BLOCK_TIME:
+        xpath: //div[@data-field='Appointment_BlockTime']
+    surgeryinformation:
+        xpath: //span[contains(.,'Surgery Information')]
+    primarydiagnosis:
+        xpath: //span[contains(.,'Primary Diagnosis')]
+    secondarydiagnosis:
+        xpath: //span[contains(.,'Secondary Diagnosis')]
+    surgicalprocedures:
+        xpath: //span[contains(.,'SURGICAL PROCEDURES')]
+    othersurgicalcomments:
+        xpath: //span[contains(.,'OTHER SURGICAL COMMENTS')]
+    primarydiagnosis_input:
+        xpath: //input[contains(@name,'primaryDiagnosis')]
+    secondarydiagnosis_input:
+        xpath: //input[contains(@name,'secondaryDiagnosis')]
+    othersurgicalcomments_input:
+        xpath: //textarea[contains(@name,'otherSurgicalComments')]
+    add_manually_button:
+        xpath: //button[contains(.,'Add Manually')]
+    surgeonheader:
+        xpath: //div[@width='1'][contains(.,'surgeon')]
+    surgeondropdown:
+        #xpath: //input[contains(@name,'surgeonDropDown')]
+        xpath: //input[contains(@placeholder,'Select a Surgeon')]
+    Amanda Martin:
+        xpath: //div[contains(@class,'sc-htpNat sc-jAaTju dIzJIi')][contains(.,'Amanda Martin')]
+    David Moore:
+        xpath: //div[contains(@class,'sc-htpNat sc-jAaTju dIzJIi')][contains(.,'David Moore')]
+    Jeffrey Willers:
+        xpath: //div[contains(@class,'sc-htpNat sc-jAaTju dIzJIi')][contains(.,'Jeffrey Willers')]
+    Thomas Dovan:
+        xpath: //div[contains(@class,'sc-htpNat sc-jAaTju dIzJIi')][contains(.,'Thomas Dovan')]
+    Burton Elrod:
+        xpath: //div[contains(@class,'sc-htpNat sc-jAaTju dIzJIi')][contains(.,'Burton Elrod')]
+    Leah Cordovez:
+        xpath: //div[contains(@class,'sc-htpNat sc-jAaTju dIzJIi')][contains(.,'Leah Cordovez')]
+    Rudolph Glattes:
+        xpath: //div[contains(@class,'sc-htpNat sc-jAaTju dIzJIi')][contains(.,'Rudlph Glattes')]
+    firstSurgeon:
+        xpath: //div[contains(@class,'sc-htpNat sc-jAaTju clMpfG')][contains(.,'Werther  DMD, John R.')]
+    cptcodesheader:
+        xpath: //span[contains(.,'CPT CODE(S)')]
+    cptcodes_input:
+        xpath: //input[contains(@name,'cptCodesInner')]
+    procedurenameheader:
+        xpath: //span[contains(.,'Procedure name')]
+    procedurename_input:
+        xpath: //input[contains(@name,'procedureName')]
+    modifierheader:
+        xpath: //span[contains(.,'Modifier')]
+    modifierside:
+        #xpath: //input[contains(@placeholder,'Side')]
+        xpath: //input[@name='modifierSide']
+    SIDE None:
+        xpath: //div[contains(@data-field,'modifierSideDropDown')]//div[@value='None']
+    SIDE Left:
+        #xpath: //div[contains(@data-field,'modifierSideDropDown')]//div[@value='Left']
+        xpath: //div[contains(@value,'Left')]
+    SIDE Right:
+        xpath: //div[contains(@data-field,'modifierSideDropDown')]//div[@value='Right']
+    SIDE Bilateral:
+        xpath: //div[contains(@data-field,'modifierSideDropDown')]//div[@value='Bilateral']
+    firstmodifierside:
+        xpath: //div[contains(@data-field, 'modifierSideDropDown')]//div[contains(@value,'None')]
+    modifierapproach:
+        xpath: //input[contains(@placeholder,'Approach')]
+    APPROACH None:
+        xpath: //div[contains(@data-field, 'modifierApproachDropDown')]//div[@value='None']
+    APPROACH Anterior:
+        #xpath: //div[contains(@data-field, 'modifierApproachDropDown')]//div[@value='Anterior']
+        xpath: //div[contains(@value,'Anterior')]
+    APPROACH Back:
+        xpath: //div[contains(@data-field, 'modifierApproachDropDown')]//div[@value='Back']
+    APPROACH Caudal:
+        xpath: //div[contains(@data-field, 'modifierApproachDropDown')]//div[@value='Caudal']
+    APPROACH Cephalic:
+        xpath: //div[contains(@data-field, 'modifierApproachDropDown')]//div[@value='Cephalic']
+    APPROACH Distal:
+        xpath: //div[contains(@data-field, 'modifierApproachDropDown')]//div[@value='Distal']
+    APPROACH Dorsal:
+        xpath: //div[contains(@data-field, 'modifierApproachDropDown')]//div[@value='Dorsal']
+    firstmodifierapproach:
+        xpath: //div[contains(@data-field, 'modifierApproachDropDown')]//div[contains(@value,'None')]
+    primaryprocedureheader:
+        xpath: //span[contains(.,'Primary Procedure?')]
+    PRIMARY PROCEDURE YES:
+        #xpath: //div[contains(@data-field, 'primaryProcedure')]//span[contains(., 'Yes')]
+        xpath: (//span[contains(.,'Yes')])[10]
+    PRIMARY PROCEDURE NO:
+        xpath: //div[contains(@data-field, 'primaryProcedure')]//span[contains(., 'No')]
+    primaryprocedure_yes:
+        xpath: /html[1]/body[1]/div[2]/div[3]/div[1]/div[6]/div[1]/div[1]/div[1]/label[1]/span[1]/div[1]/span[1]
+        #(//span[contains(.,'Yes')])[10]
+        #/html/body/div[2]/div[3]/div/div[6]/div/div/div[1]/label/div
+        #(//span[contains(.,'Yes')])[8]
+    primaryprocedure_no:
+        xpath: (//span[contains(.,'No')])[10]
+        #(//span[contains(.,'No')])[8]
+    durationheader:
+        xpath: //span[contains(.,'Duration')]
+    duration_input:
+        xpath: //input[contains(@name,'duration')]
+    anesthesiatypeheader:
+        xpath: //span[contains(.,'Anesthesia Type')]
+    anesthesiaType:
+        xpath: //span[normalize-space()='Select an option']
+    anesthesiaTypedropdown: 
+        xpath: //span[contains(.,'Anesthesia Type')]//following::div[1]
+    ANESTHESIA TYPE General:
+       #xpath: //div[contains(@data-field, 'anesthesiaDropDown')]//div[contains(@value,'General')]
+        xpath: //div[contains(@value,'General')]
+    ANESTHESIA TYPE Local:
+        xpath: //div[contains(@data-field, 'anesthesiaDropDown')]//div[contains(@value,'Local')]
+    #ANESTHESIA TYPE Local/Sedation:
+        xpath: //div[contains(@data-field, 'anesthesiaDropDown')]//div[contains(@value,'Local/Sedation')]
+    ANESTHESIA TYPE MAC:
+        xpath: //div[contains(@data-field, 'anesthesiaDropDown')]//div[contains(@value,'MAC')]
+    ANESTHESIA TYPE Spinal:
+        xpath: //div[contains(@data-field, 'anesthesiaDropDown')]//div[contains(@value,'Spinal')]
+    firstAnesthesiaType:
+        xpath: //body/div[@role='presentation']/div/div/div/div/div/div/div/div[2]/label[1]/div[1]
+    anesthesiaDropdown:
+        xpath: //span[contains(.,'Select an option')]
+    implantsneededheader:
+        xpath: //span[contains(.,'Implants Needed')]
+    IMPLANTS NEEDED YES:
+        xpath: //span[contains(.,'Implants Needed')]//following::div[2]
+    IMPLANTS NEEDED NO:
+        xpath: //div[contains(@data-field, 'implantsNeeded')]//span/div[contains(., 'No')]
+    VENDOR INPUT:
+        xpath: //input[contains(@id, 'vendorName')]
+    vendorContactedYes:
+        xpath: //div[@data-field='vendorContacted']//div//div//label//span//div//span[contains(text(),'Yes')]
+    VENDOR CONTACTED NO:
+        xpath: //body/div[@role='presentation']/div/div/div/div/div[@data-field='vendorContacted']/div/div[2]/label[1]/div[1]
+    vendorField:
+        xpath: //input[@name='vendorName']
+    implantsneeded_yes:
+        xpath: (//span[contains(.,'Yes')])[12]
+    implantsneeded_no:
+        xpath: //div[contains(@data-field, 'implantsNeeded')]//span/div[contains(., 'No')]
+    otherequipmentandsuppliesheader:
+        xpath: //span[contains(.,'Other equipment and supplies')]
+    otherequipmentandsupplies_textarea:
+        xpath: //textarea[contains(@name,'otherEquipment')]
+    additionalprocedurecommentsheader:
+        xpath: //span[contains(.,'Additional procedure comments')]
+    additionalprocedurecomments_textarea:
+        xpath: //textarea[contains(@name,'additionalComments')]
+    addsurgery_button:
+        xpath: //button[contains(@id,'addSurgery')]
+    PAT NEEDED YES:
+        xpath: //div[contains(@data-field, 'PAT_TestingNeeded')]//span[contains(.,'Yes')]
+    PAT NEEDED NO:
+        xpath: //div[contains(@data-field, 'PAT_TestingNeeded')]//span[contains(.,'No')]
+    isprehospitalbedneededheader:
+        xpath: //span[contains(.,'Is a pre-hospital bed needed?')]
+    #Selectprehospitalfield:
+     #  xpath: //div[@value='None Needed']
+    Is a pre-hospital bed needed DropDown:
+       xpath: //div[@data-field='PAT_BedNeeded']//input[@type='text']
+    Is a pre-hospital bed needed DropDown FirstChoice:
+        xpath:  //div[contains(@value, 'Direct Admit')]
+    DIRECT_ADMIT:
+        xpath: //div[contains(@value, 'Direct Admit')]
+    Direct Admit:
+        xpath: //div[contains(@data-field, 'PAT_BedNeeded')]//div[@value='Direct Admit']
+    Pre-Hospital Bed:
+        xpath: //div[contains(@data-field, 'PAT_BedNeeded')]//div[@value='Pre-Hospital Bed']
+    None Needed:
+        xpath: //div[contains(@data-field, 'PAT_BedNeeded')]//div[@value='None Needed']
+    PRE_HOSPITAL_BED:
+        xpath: //div[contains(@value, 'Pre-Hospital Bed')]
+    NONE_NEEDED:
+        xpath: //div[contains(@value, 'None Needed')]
+    IS PRE-ADMISSION TESTING NEEDED Header:
+        xpath: //span[contains(.,'Is pre-admission testing needed')]
+    IS PRE-ADMISSION TESTING NEEDED YesOption:
+       xpath: //span[contains(.,'Is pre-admission testing needed')]/following::div[2]
+    WHERE IS PAT TAKING PLACE:
+        xpath: //input[@name='patLocation']
+    pathValue: 
+        xpath: //div[contains(@value,'PAT')]
+    nopreadmissiontestingneeded:
+        xpath: (//span[contains(.,'No')])[6]
+    submitsurgeryrequestbutton:
+        xpath: //span[contains(.,'Submit Surgery Request')]
+    Patient Details:
+        xpath: (//span[@class='sc-bdVaJa gUbPLK section-title'])[2]
+    Last Name:
+        xpath: //input[@name='patientLastName']
+    FIRST NAMEF: 
+        xpath: (//span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'])[6]
+    First Name:
+        xpath: //input[@name='patientFirstName']
+    Middle Name: 
+        xpath: //input[@name='patientMiddleName']
+    Data of Birth: 
+        xpath: //input[@name='patientDOB']
+    SSN:
+        xpath: //input[@name='patientSSN1']
+    patientSex:
+        xpath: //input[@name='patientGender']
+    Sex Male: 
+        xpath: //div[@value='M']
+    Sex Female:
+        xpath: //div[@value='F']
+    Phone Number: 
+        xpath: //input[@name='patientPhoneNumber']
+    Email:
+        xpath: //input[@name='patientEmail']
+    INTERPRETER NEEDED:
+        xpath: //span[contains(text(),'INTERPRETER NEEDED')]
+    LANGUAGE:
+        xpath: //input[@name='patientInterpretLanguage']
+
+    LATEX ALLERGY YES:
+        xpath: //div[contains(@data-field, 'patientLatexAllergy')]//span[contains(., 'Yes')]
+    LATEX ALLERGY NO: 
+        xpath: //div[contains(@data-field, 'patientLatexAllergy')]//span[contains(., 'No')]
+        #(//div[@class='sc-htpNat sc-hMqMXs eyqYEX'])[2]
+    IODINE ALLERGY YES:
+        xpath: //div[contains(@data-field, 'patientIodineAllergy')]//span[contains(., 'Yes')]
+    IODINE ALLERGY NO: 
+        xpath: //div[contains(@data-field, 'patientIodineAllergy')]//span[contains(., 'No')]
+     
+    #Primary Insurance Details:
+    PRIMARY INSURED LAST NAME: 
+        xpath: //input[@name='insuredLastName']
+    PRIMARY INSURED FIRST NAME:
+        xpath: //input[@name='insuredFirstName']
+    Health Plan Name:
+        xpath: //input[@name='healthPlanName']
+    Policy Number:
+        xpath: //input[@name='policyNumber']
+    PRIMARY GROUP NUMBER:
+        xpath: //input[@name='groupNumber']
+    PRIMARY PRE-CERT NUMBER:
+        xpath: //input[@name='preCertNumber']
+    PRE-AUTH IN PROGRESS YES:
+        xpath: //div[contains(@data-field, 'preAuthPrimary')]//span[contains(., 'Yes')]
+    PRE-AUTH IN PROGRESS NO:
+        xpath: //div[contains(@data-field, 'preAuthPrimary')]//span[contains(., 'No')]
+    PRE-AUTH IN PROGRESS:
+        xpath: (//div[@class='sc-htpNat sc-hMqMXs eyqYEX'])[3]     
+    Add Secondary Insurance:
+        xpath: (//span[@class='sc-bdVaJa hsNRmA'])[1]
+    SECONDARY INSURED LAST NAME:
+        xpath: (//input[@name='insuredLastName'])[2]
+    SECONDARY INSURED FIRST NAME:
+        xpath: (//input[@name='insuredFirstName'])[2]
+    SECONDARY HEALTH PLAN NAME:
+        xpath: (//input[@name='healthPlanName'])[2]
+    SECONDARY POLICY NUMBER:
+        xpath: (//input[@name='policyNumber'])[2]
+    SECONDARY GROUP NUMBER:
+        xpath: (//input[@name='groupNumber'])[2]
+    SECONDARY PRE-CERT NUMBER:
+        xpath: (//input[@name='preCertNumber'])[2]
+    SECONDARY PRE-AUTH IN PROGRESS YES:
+        xpath: //div[contains(@data-field, 'secondaryInsuranceInformation')]//span[contains(., 'Yes')]
+    SECONDARY PRE-AUTH IN PROGRESS NO:
+        xpath: //div[contains(@data-field, 'secondaryInsuranceInformation')]//span[contains(., 'No')]
+    SECONDARY PRE-AUTH IN PROGRESS:
+        xpath: (//div[@class='sc-htpNat sc-hMqMXs eyqYEX'])[5]
+    HOME_Button:
+        xpath: //a[contains(@data-field, 'backHome')]
+    SearchByPatientName:
+        xpath: //input[@placeholder='Search by patient name']
+    SortBy:
+        xpath: //span[normalize-space()='SORT BY']//following::span[1]
+    Created_Newest:
+        xpath: //div[contains(text(),'NEWEST')]
+    Created_Newest_Request_Date:
+        xpath: //div[@class='sc-bdVaJa fYXsVS'][contains(.,'Requested Surgery Date')]
+    Created_Newest_Request_Time:
+        xpath: //*[@id="root"]/div/div[2]/div[2]/div/div/div/div[5]/div/div/div[1]/div[1]/span[2]
+    Created_Newest_Request_Meridiem:
+        xpath: //*[@id="root"]/div/div[2]/div[2]/div/div/div/div[5]/div/div/div[1]/div[1]/span[2]/span
+    Created_Newest_Patient_Name:
+        xpath: //*[@id="root"]/div/div[2]/div[2]/div/div/div/div[5]/div/div/div[2]/div[1]/span[1]
+    Created_Newest_Procedure:
+        xpath: //*[@id="root"]/div/div[2]/div[2]/div/div/div/div[5]/div/div/div[2]/div[1]/span[2]
+    Created_Newest_Location:
+        xpath: //*[@id="root"]/div/div[2]/div[2]/div/div/div/div[5]/div/div/div[2]/div[1]/span[3]
+    Created_Newest_Surgeon:
+        xpath: //*[@id="root"]/div/div[2]/div[2]/div/div/div/div[5]/div/div/div[1]/div[2]/span
+    Unscheduled_Number:
+        xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[2]
+    WHERE IS PAT TAKING PLACE dropdown:
+        xpath: //input[contains(@id, 'patLocation')]
+    PAT:
+        xpath: //div[contains(@data-field, 'PAT_Location')]//div[@value='PAT']
+    POMC:
+        xpath: //div[contains(@data-field, 'PAT_Location')]//div[@value='POMC']
+    Other:
+        xpath: //div[contains(@data-field, 'PAT_Location')]//div[@value='Other']
+    CASE_CARD_DETAILS:
+        xpath: //div[contains(@data-field,'caseCardDetails')]
+     #Add From Template xpaths
+    AddFromTemplate:
+       xpath: //span[contains(.,'Add From Template')]
+    AddAProcedureTitle:
+       xpath: //span[contains(.,'Add a Procedure')]
+    TemplateTile: 
+       xpath: /html/body/div[2]/div[3]/div/div/div[1]/div[5]/div[1]
+    AddAProcedureTemplateTile:
+       xpath: //span[contains(.,'Add a Procedure')]
+    EditAddAProcedureName: 
+       xpath: //input[@name='procedureName']
+    ReviewMyTemplate:
+       xpath: //span[contains(.,'Review my template')]
+    VendorContactedYes:
+       xpath: //input[@name='vendorContacted']//following::span[contains(text(),'Yes')]
+    AdditionalComments:
+       xpath: //textarea[@name='additionalComments']
+    AddTemplateButton:
+       xpath: //button[contains(@id,'addSurgery')]
+    RequestSurgeryModel:
+       xpath: //span[contains(.,'SURGICAL PROCEDURES')]
+    EditButton:
+       #xpath: //a[contains(@data-field,'Edit0')]
+       xpath: //a[@data-field='Edit0'][contains(.,'Edit')]
+    RemoveButton:
+       xpath: //a[contains(.,'Remove')]
+    Duration:
+       xpath: //span[contains(.,'Duration')]
+    AnesthesiaType:
+       xpath: //span[contains(.,'Anesthesia Type')]
+    AdditionalProcedureComments:
+       xpath: //span[contains(.,'Additional Procedure Comments')]
+    EditProcedureName: 
+       xpath: //input[@name='procedureName']
+    ProcedureName:
+       xpath: //span[contains(@data-field,'title')]
+    isprehospitalbedneededfield:
+       xpath: //span[contains(.,'Is a pre-hospital bed needed?')]/following::input[@placeholder ='Select']
+    PAT NEEDED:
+       xpath: //input[contains(@name,'patLocation')]
+    #Cancelation Process
+    SORT_BY:
+       xpath: //div[contains(@data-field, 'SORT_BY')]
+    NEWEST:
+       xpath: //div[@tabindex='0'][contains(.,'NEWEST')]
+    CASE_CARD_DETAILS:
+       xpath: //div[contains(@data-field,'caseCardDetails')]
+    EDIT:
+       xpath: //button[contains(@id, 'edit')]
+    SPINNER:
+       xpath: //div[contains(@id, 'cover-spin')]
+    CANCEL_PROCEDURE:
+       xpath: //button[@id='cancelProcedure']
+    CANCEL_PROCEDURE_MESSAGE:
+       xpath: //textarea[contains(@id, 'message')]
+    CONFIRM_CANCELLATION:
+       xpath: //button[@id='cancelCase']
+    PENDING_CANCELLATION_ALERT:
+       xpath: //div[contains(@data-section,'revisionAlert')]//span[contains(.,'This procedure is pending cancellation')]//..//..
+    CANCELLATION_MESSAGE:
+       xpath: //div[contains(@data-section,'cancellationInfo')]//span[@font-style='italic']
+    CONFIRM:
+       xpath: //div[contains(@data-section,'cancellationInfo')]//a[contains(.,'Confirm')]
+    APPROVED_CANCELLATION_ALERT:
+       xpath: //div[contains(@data-section,'revisionAlert')]//span[contains(.,'Cancellation request approved.')]//..//..
+    CANCELLATION_INFO:
+       xpath: //div[contains(@data-section, 'cancellationInfo')]//span
+    MARK_AS_SEEN:
+       xpath: //div[contains(@data-section, 'cancellationInfo')]//a[contains(.,'Mark as Seen')]
+    filter_toggle:
+       xpath: //input[@name='myFilterToggle']

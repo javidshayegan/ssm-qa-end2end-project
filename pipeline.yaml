@@ -1,0 +1,15 @@
+notify:
+  email:
+    - javid.shayegan@ascension.org
+    - Jjohny.vattathara@ascension.org
+    - Bbrent.baron@ascension.org
+    - Aaditya.pajjuru@ascension-external.org
+e2eTest: #Allow for EndToEnd testing
+  # nodeType: windowsQA
+  image: cloudbees/java-build-tools
+  CMDs:
+    mvn:
+      - "verify"
+  htmlDir: test-output
+  htmlFileName: Casetracker_Automated_Test_Report.html
+  # testLoc: "**/e2eResult.xml"

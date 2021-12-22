@@ -1,0 +1,54 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+  values:
+    ascensionidpassword: 'Welcome1@'
+    userid: 'office_scheduler@practice1.com'
+    username: 'DSSC_OFFICE_SCHEDULER'
+    fileaddedstring: 'successfully added.'
+elements:
+  SPINNER:
+    xpath: //div[contains(@id, 'cover-spin')]
+  warningcardtitle:
+    xpath: //span[contains(.,'Warnings')]
+  unscheduledcardtitle:
+    xpath: //span[@font-size='3'][contains(.,'Unscheduled')]
+  Revised_Number:
+    xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[3]
+  revisedcardtitle:
+    xpath: //span[contains(.,'Revised')]
+  messagescardtitle:
+    xpath: //span[contains(.,'Messages')]
+  numberofwarningrequests:
+    xpath: (//span[contains(@class,'sc-bdVaJa sc-hzDkRC GbJmZ')])[1]
+  warninglabel:
+    xpath: (//span[@color='#BF0000'][contains(.,'WARNING')])[1]
+  appointmentrequesttab:
+    xpath: //a[contains(.,'Appointment Request')]
+  patientinfotab:
+    xpath: //a[contains(.,'Patient Info')]
+  surgeryinfotab:
+    xpath: //a[contains(.,'Surgery Info')]
+  patinfotab:
+    xpath: //a[contains(.,'PAT Info')]
+  numberinfilteredcases:
+    xpath: //span[contains(@class,'sc-bdVaJa dMMSnx')]
+  endqueuebutton:
+    xpath: //a[contains(.,'End Queue')]
+  amountoffilteredcases:
+    xpath: (//span[contains(.,'Filtered Cases')])[2]
+  numberofunscheduledrequests:
+    xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[2]
+  unscheduledlabel:
+    xpath: //span[contains(.,'UNSCHEDULED')]
+  revisedlabel:
+    xpath: //span[contains(.,'Revised')]
+  numberofrevisedrequests:
+    xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[3]
+  comingsoonsubtitle:
+    xpath: //span[contains(.,'COMING SOON')]
+  comingsoonmessage:
+    xpath: //span[contains(.,'Review Messages Coming Soon!')]
+  HOME:
+    xpath: //a[contains(.,'< Home')]
+  filter_toggle:
+    xpath: //input[@name='myFilterToggle']

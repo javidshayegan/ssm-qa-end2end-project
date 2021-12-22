@@ -1,0 +1,130 @@
+elements:
+   userName:
+      xpath: //span[@data-field='userName']
+   AccountSetting:
+      xpath: //span[contains(@id,'settings')]
+   MyInformation:
+      xpath: //a[contains(.,'My Information')]
+   MyNotifications:
+      xpath: //span[contains(text(),'My Notifications')]
+   MyFilters: 
+      xpath: //span[contains(.,'My Filters')]
+   MyTemplate:
+      xpath: //span[contains(.,'My Templates')]
+   MyInformationTitle:
+      xpath: //span[@font-size='7'][contains(.,'My Information')]
+   MyTemplateTitle:
+      xpath: //span[@font-size='7'][contains(.,'My Templates')]
+   CreateTemplate:
+      xpath: //a[contains(.,'CREATE TEMPLATE')]
+   Home:
+      xpath: //a[contains(.,'< Home')]
+   CreateTemplateTitle:
+      xpath: //span[contains(.,'Create Template')]
+   #TemplateModal
+   TemplateModalName:
+      xpath: //span[contains(.,'Template Name')]
+   EditTemplateModalName:
+      xpath: //span[contains(.,'Edit Template')]
+   Surgeon: 
+      xpath: //span[contains(.,'SURGEON')]
+   CPTCode:
+      xpath: //span[contains(.,'CPT CODE(S)')]
+   ProcedureName:
+      xpath: //span[contains(.,'Procedure name')]
+   TypeProcedureName:
+      xpath: //input[@name='procedureName']
+   Modifier:
+      xpath: //span[contains(.,'Modifier')]
+   PrirmaryProcedure:
+      xpath: //span[contains(., 'Primary Procedure')]
+   Duration:
+      xpath: //span[contains(., 'Primary Procedure')]//following::span[contains(.,'Duration')]
+   AnesthesiaType:
+      xpath: //input[@name='duration']//following::span[contains(.,'Anesthesia Type')]
+   ImplantsNeeded:
+      xpath: //span[contains(.,'Implants Needed')]
+   OtherEquipmentAndSupplies:
+      xpath: //span[contains(.,'Implants Needed')]//following::span[contains(.,'Other equipment and supplies')]
+   AdditionalProcedureComments:
+      xpath: //span[contains(.,'Additional procedure comments')]
+   CancelButton:
+      xpath: //button[contains(.,'Cancel')]
+   CreateButton:
+      xpath: //button[contains(.,'Create')]
+   #Creating template
+   TemplateNameField:
+       xpath: //input[@name='templateName']
+   SurgeonField:
+      xpath: //input[@name='surgeon']
+   SurgeonName:
+      xpath: (//div[contains(@tabindex,'0')])[34]
+   CPTCodeEnter:
+      xpath: //input[@name='cptCodesInner']
+   TypeProcedureName:
+      xpath: //input[@name='procedureName']
+   ModifierSideDropdown:
+      xpath: //input[@name='modifierSide']
+   ModifierSide:
+      xpath: //div[contains(@value,'Left')]
+   ApproachDropdown:
+      xpath: //input[@name='modifierApproach']
+   ApproachValue:
+      xpath: //div[contains(@value,'Anterior')]
+   PrimaryProcedure:
+      xpath: (//span[contains(.,'Yes')])[2]
+   DurationField:
+      xpath: //input[@name='duration']
+   AnesthesiaTypeField: 
+      xpath: //div[@role='presentation']//div//div//div//label//div//span[contains(text(),'Anesthesia Type')]//following::div[1]
+   SelectAnesthesiaType: 
+      xpath: //span[contains(text(),'Local')]
+   ImplantsNeededField:
+      xpath: (//span[contains(.,'Yes')])[4]
+   Vendor:
+      xpath: //input[@name='vendorName']
+   OtherEquipmentandSuppliesTextArea:
+      xpath: //textarea[@name='otherEquipment']
+   AdditionalProcedureCommentsField:
+      xpath: //textarea[@name='additionalComments']
+ #Edit My Template:
+   ThreeDotted:
+      xpath: //a[normalize-space()='CLEAR FILTERS']//following::div[6]
+   EditOption:
+      xpath: //body/div[@role='presentation']/div[3]/ul[1]/li[1]
+   EditTemplateModalTitle:
+      xpath: //span[contains(.,'Edit Template')]
+   EditTemplateName:
+      xpath: (//span[contains(.,'TEMPLATE NAME')])[3]
+   EditTemplateName:
+      xpath: //input[@name='templateName']
+   EditModifier:
+      xpath: //input[@placeholder='Side']
+   EditModifierSide:
+      xpath: //div[@value='Right']
+   EditAnesthesiaType:   
+      xpath: //div[@role='presentation']//div//div//div//label//div//span[contains(text(),'Anesthesia Type')]//following::div[1]
+   AnestheisType: 
+      xpath: //span[contains(text(),'MAC')]
+   OtherEquipment: 
+      xpath: //textarea[contains(@name,'otherEquipment')]
+   UpdateButton:
+      xpath: //span[contains(.,'Update')]
+   OrderBy:
+      xpath: //span[contains(.,'SORT BY')]
+   OrderByNewest:
+      xpath: //div[@tabindex='0'][contains(.,'NEWEST')]
+   CommentSection:
+      xpath: //span[contains(.,'Editing, No Comment is  . . . . . . . . .')]
+   GreenEditButton:
+      xpath: //span[@data-field='tag'][contains(.,'Edited')]
+   CptCodeButton:
+      xpath: //div[@class='sc-htpNat sc-hmzhuo jHMpNT icon-close']
+   DeleteAlreadyEdited:
+      xpath: //span[@data-field='title'][contains(.,'Standard Cholosectomy JE Edited for')]
+   DeleteOption:
+      xpath: (//li[contains(.,'Delete')])[3]
+   ConfirmDeleteButton: 
+      xpath: //button[@id ='confirmDeleteTemplate']
+   filter_toggle:
+      xpath: //input[@name='myFilterToggle']      

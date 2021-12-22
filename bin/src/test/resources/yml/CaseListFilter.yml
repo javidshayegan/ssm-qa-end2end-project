@@ -1,0 +1,141 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+
+elements:
+  SPINNER:
+    xpath: //div[contains(@id, 'cover-spin')]
+  SORT_BY:
+    xpath: //span[contains(.,'SORT BY')]
+  FILTER_BY:
+    xpath: //span[contains(.,'FILTER BY')]
+  OTHER_FILTERS:
+    xpath: //span[contains(.,'OTHER FILTERS')]
+  PROCEDURE_DATE:
+    xpath: (//span[contains(.,'PROCEDURE DATE')])[2]
+  PROCEDURE_DATE_SORT_BY:
+    xpath: (//span[contains(.,'PROCEDURE DATE')])[1]
+  LOCATION:
+    xpath: //span[contains(.,'LOCATION')]
+  PATIENT_NAME:
+    xpath: //span[contains(.,'PATIENT NAME')]
+  DATE_CREATED:
+    xpath: //span[contains(.,'DATE CREATED')]
+  NEAREST:
+    xpath: //div[@tabindex='0'][contains(.,'NEAREST')]
+  FURTHEST:
+    xpath: //div[@tabindex='0'][contains(.,'FURTHEST')]
+  LOCATION_A_Z:
+    xpath: //div[@tabindex='0'][contains(.,'LOCATION A-Z')]
+  LOCATION_Z_A:
+    xpath: //div[@tabindex='0'][contains(.,'LOCATION Z-A')]
+  PATIENT_A_Z:
+    xpath: //div[@tabindex='0'][contains(.,'PATIENT A-Z')]
+  PATIENT_Z_A:
+    xpath: //div[@tabindex='0'][contains(.,'PATIENT Z-A')]
+  OLDEST:
+    xpath: //div[@tabindex='0'][contains(.,'OLDEST')]
+  NEWEST:
+    xpath: //div[@tabindex='0'][contains(.,'NEWEST')]
+  CORDOVEZ:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'Cordovez MD, Leah')]
+  DOVAN:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'Dovan MD, Thomas')] 
+  ELROD:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'Elrod MD, Burton')]
+  GLATTES:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'Glattes MD, Rudolph')]
+  MARTIN:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'Martin DO, Amanda')]
+  MOORE:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'Moore MD, David')]
+  WILLERS:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'Willers MD, Jeffrey')]
+  BOOKMARKED:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'BOOKMARKED')]
+  UNSCHEDULED:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'UNSCHEDULED')]
+  SCHEDULED:
+    xpath: (//span[contains(@class,'sc-bdVaJa sc-gqjmRU fBoPwA')])[12]
+  CANCELLED:
+    xpath: (//span[contains(@class,'sc-bdVaJa sc-gqjmRU fBoPwA')])[13]
+  PENDING_CANCELLED:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'PENDING CANCELLATION')]
+  PENDING CANCELLATION:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'PENDING CANCELLATION')]
+  NEEDS_REVISION:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'NEEDS REVISION')]
+  NEEDS REVISION:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'NEEDS REVISION')]
+  REVISED:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'REVISED')]
+  WARNINGS:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'WARNINGS')]
+  WARNING:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'WARNING')]
+  INPATIENT:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'INPATIENT')]
+  OUTPATIENT:
+    xpath: //span[@class='sc-bdVaJa sc-gqjmRU fBoPwA'][contains(.,'OUTPATIENT')]
+  TODAY:
+    xpath: //div[@tabindex='0'][contains(.,'TODAY')]
+  TOMORROW:
+    xpath: //div[@tabindex='0'][contains(.,'TOMORROW')]
+  NEXT_WEEK:
+    xpath: //div[@tabindex='0'][contains(.,'NEXT WEEK')]
+  NEXT_MONTH:
+    xpath: //div[@tabindex='0'][contains(.,'NEXT MONTH')]
+  CUSTOM:
+    xpath: //div[@tabindex='0'][contains(.,'CUSTOM')]
+  DATE_IN_CASE_CARD:
+    xpath: //span[contains(@data-field,'date')]
+  LOCATION_IN_CASE_CARD:
+    xpath: //span[contains(@data-field,'location')]
+  PATIENT_IN_CASE_CARD:
+    xpath: //span[contains(@data-field,'patientName')]
+  SURGEON_IN_CASE_CARD:
+    xpath: //span[contains(@data-field,'surgeonName')]
+  SORRY_EMPTY:
+    xpath: //span[contains(@class,'sc-bdVaJa dcscNt')]
+  TRY_EMPTY:
+    xpath: //span[contains(@class,'sc-bdVaJa gcHCIm')]
+  RESET_FILTER:
+    xpath: //a[contains(.,'RESET FILTERS')]
+  CHECKBOX:
+    xpath: //input[contains(@type,'checkbox')]
+  TAGS:
+    xpath: //span[contains(@data-field,'tag')]
+  CASE_CARD_DETAILS:
+    xpath: //div[contains(@data-field,'caseCardDetails')]
+  CASE_COUNT:
+    xpath: //span[contains(.,'Showing')]
+  CASE_PAGE:
+    xpath: //input[contains(@placeholder, 'Select one')]
+  25:
+    xpath: //div[contains(@value,'25')]
+  50:
+    xpath: //div[contains(@value,'50')]
+  100:
+    xpath: //div[contains(@value,'100')]
+  ALL:
+    xpath: //div[contains(@value,'1000000')]
+  FIRST_A_TAG:
+    xpath: //a[contains(@aria-label,'Go to first page')]
+  FIRST_LI_TAG:
+    xpath: //a[contains(@aria-label,'Go to first page')]/..
+  PREV_A_TAG:
+    xpath: //a[contains(@aria-label,'Go to previous page')]
+  PREV_LI_TAG:
+    xpath: //a[contains(@aria-label,'Go to previous page')]/..
+  NEXT_A_TAG:
+    xpath: //a[contains(@aria-label,'Go to next page')]
+  NEXT_LI_TAG:
+    xpath: //a[contains(@aria-label,'Go to next page')]/..
+  LAST_A_TAG:
+    xpath: //a[contains(@aria-label,'Go to last page')]
+  LAST_LI_TAG:
+    xpath: //a[contains(@aria-label,'Go to last page')]/..
+  PAGE_NUMBER_A_TAG:
+    xpath: //a[contains(@aria-label, 'Go to page number')]
+  BOOKMARKED_ICON:
+    xpath: //div[contains(@class, 'icon-ribbonsolid')]
+  filter_toggle:
+    xpath: //input[@name='myFilterToggle']

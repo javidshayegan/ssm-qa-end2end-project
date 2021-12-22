@@ -1,0 +1,36 @@
+elements:
+   SPINNER:
+      xpath: //div[contains(@id, 'cover-spin')]
+   CASE_CARD_DETAILS:
+      xpath: //div[contains(@data-field,'caseCardDetails')]
+   REVISED_ALERT:
+      xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Revised')]/../..
+   REVISED_INFO:
+      xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Revised')]/../..//div[contains(@data-section,'revisionInfo')]
+   EDIT:
+      xpath: //button[contains(@id, 'edit')]
+   SAVE_CHANGES:
+      xpath: //button[contains(@id, 'request-form-save')]
+   REQUEST_REVISION_YES:
+      xpath: //div[@data-field='requestRevision']//span[contains(.,'Yes')]
+   REQUEST_REVISION_NO:
+      xpath: //div[@data-field='requestRevision']//span[contains(.,'No')]
+   REQUEST_REVISION_CHANGE_PROCEDURE_TIME:
+      xpath: //span[contains(text(), 'Change procedure date and/or time')]
+#xpath: //input[contains(@value, 'Change procedure time')]
+   appointmentdatefield:
+      xpath: //input[contains(@name,'appointmentDate')]
+   appointmenttimefield:
+      xpath: //input[@name='appointmentTime']
+   EditCancelButton:
+      xpath: //div[@data-field= 'submit-request']//button//span[contains(text(),'Cancel')]
+   REQUEST_REVISION_MISSING_INFORMATION:
+      xpath: //input[contains(@value, 'Missing information')]
+   TimeoutWarning:
+      xpath: //span[contains(.,'There was a problem submitting your request. Please try again later.')]
+   REQUEST_REVISION_OTHER:
+      xpath: //input[contains(@value, 'Other')]
+   REQUEST_REVISION_MESSAGE:
+      xpath: //textarea[contains(@id, 'requestRevisionMessage')]
+   filter_toggle:
+      xpath: //input[@name='myFilterToggle']

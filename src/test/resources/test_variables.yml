@@ -1,0 +1,61 @@
+configs:
+   system_type: windows
+   driver_type: gecko
+   driver_file: src/test/resources/Drivers/geckodriver
+   #driver_type: chrome
+   #driver_file: src/test/resources/Drivers/chromedriver.exe
+pages:
+   RequestASurgery:
+      reference: yml/RequestASurgery.yml
+   CasePreferenceIndicator:
+      reference: yml/CasePreferenceIndicator.yml
+   TaskAreaHappyPath:
+      reference: yml/TaskArea_HappyPath.yml
+   Login:
+      reference: yml/Login.yml
+   TaskAreaNegative:
+      reference: yml/TaskAreaNegative.yml
+   CaseListFilter:
+      reference: yml/CaseListFilter.yml
+   ConformSurgeryRequest:
+      reference: yml/ConformSurgeryRequest.yml
+   EditSurgeryRequest:
+      reference: yml/EditSurgeryRequest.yml
+   ConformRevisedRequest:
+      reference: yml/ConformRevisedRequest.yml
+   ORScheduler_RequestRevision:
+      reference: yml/ORScheduler_RequestRevision.yml
+   RequestCancellation:
+      reference: yml/RequestCancellation.yml
+   ORScheduler_TaskArea:
+      reference: yml/ORScheduler_TaskArea.yml
+   MarkAsResolved:
+      reference: yml/MarkAsResolved.yml
+   Calendar:
+      reference: yml/Calendar.yml
+   TaskEditAndReview:
+      reference: yml/TaskEditReview.yml
+   RequestARevision:
+      reference: yml/RequestARevision.yml
+   RespondToARevision:
+      reference: yml/RespondToARevision.yml
+   WarningsAndAlerts:
+      reference: yml/WarnignsAndAlerts.yml
+   MyInformationMySurgeon:
+      reference: yml/MyInformationMySurgeon.yml
+   OfficeSchedulerSmokeTests:
+      reference: yml/OfficeSchedulerSmokeTests.yml
+   ORSchedulerSmokeTests:
+      reference: yml/ORSchedulerSmokeTests.yml
+   MyTemplateCreate:
+      reference: yml/MyTemplateCreate.yml
+   AddFromTemplate:
+      reference: yml/AddFromTemplate.yml
+   MyTemplateDuplicate:
+      reference: yml/MyTemplateDuplicate.yml
+   OfficeViewerCasePreferenceIndicator:
+      reference: yml/OfficeViewerCasePreferenceIndicator.yml
+   RequestASurgeryNamePrefilled:
+      reference: yml/RequestASurgeryNamePrefilled.yml
+   MyFiltersPage:
+      reference: yml/OfficeScheduler_MyFilterPage.yml

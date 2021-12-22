@@ -1,0 +1,71 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+    values:
+        ascensionidpassword: 'Welcome1@'
+        userid: 'or_scheduler1@ascension.org'
+        username: 'DSSC_OFFICE_SCHEDULER'
+        userid2: 'Office_scheduler@practice1.com'
+        username2: 'DSSC_OFFICE_SCHEDULER'
+        fileaddedstring: 'successfully added.'
+elements:
+    ascensionidloginbutton:
+        xpath: //span[@class='sc-bdVaJa kdzqCk'][contains(.,'Log in with Ascension ID')]
+    ascensionidfield:
+        xpath: //input[contains(@id,'signInName')]
+    ascensionidpasswordfield:
+        xpath: //input[contains(@id,'password')]
+    loginbutton:
+        xpath: //button[contains(@id,'next')]
+    Unscheduled_Number:
+        xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[2]
+    ReviewAllTasks:
+       xpath: //a[contains(.,'Review All Tasks >')]
+# Requesting A revision
+    OtherFiltersBox: 
+       xpath: (//div[contains(@class,'sc-htpNat sc-bxivhb sc-fAjcbJ fCpOTY')])[3]
+    OtherFilter: 
+       xpath: (//div[@class='sc-htpNat sc-bxivhb sc-ckVGcZ gsGvld'])[1062]
+    unscheduledCases:
+       xpath: //span[contains(@data-field,'patientName5f08657eb03d5f0042249a12')]
+    RequestARevisionLink:
+       xpath: //a[contains(.,'REQUEST REVISION')]
+    SPINNER:
+      xpath: //div[contains(@id, 'cover-spin')]
+    #RequestARevisionButton:  
+       #xpath: /html/body/div/div/div[2]/div[2]/div/div[3]/div/div[1]/div[5]/div[3]/div/a
+    RequestArevisionText:
+       xpath: //span[contains(.,'Request a Revision')] 
+    TimeNotAvailable:
+       xpath: //input[@value='Time not available']
+    MessageBox:
+       xpath: //textarea[@name='message']
+    RequestARevisionButton:
+       xpath: //span[contains(.,'Request Revision')]
+       
+       #################################
+    NeedsRevision:
+       xpath: //span[contains(text(), 'A revision request is pending approval.')]
+    RevisedMessage:
+       xpath: //span[contains(text(), 'This Case is resolved!')]  
+    Message:
+       xpath: //span[contains(text(), 'Cancel a procedure is requested!')]
+    LogoutMenu:
+       xpath: (//*[name()='svg']//*[name()='path'])[2]
+    LogoutLink:
+       xpath: //span[contains(text(), 'Log out')]
+    NeedsRevisiontoReview:
+       xpath: //span[contains(text(), 'Needs Revision')]
+    MarkasResolvedText:
+       xpath: //span[contains(text(), 'Mark as Resolved')]
+    Changeproceduretime:
+       xpath: //div[contains(@class, 'sc-htpNat sc-hMqMXs eyqYEX')]
+    MarkAsResolvedMessageBox:
+       xpath: //textarea[contains(@id, 'message')]
+    Revised:
+       xpath: //div[contains(@class, 'sc-htpNat sc-bxivhb sc-bRBYWo lhpAbX')]/descendant::span[contains(text(), 'Revised')]
+    Approve:
+       xpath: //a[contains(text(), 'Approve')]
+    filter_toggle:
+       xpath: //input[@name='myFilterToggle']
+          
+       

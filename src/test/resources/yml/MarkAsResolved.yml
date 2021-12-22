@@ -1,0 +1,38 @@
+
+elements:
+  SPINNER:
+    xpath: //div[contains(@id, 'cover-spin')]
+  SORT_BY:
+    xpath: //span[contains(.,'SORT BY')]
+  CREATED_NEWEST:
+    xpath: //div[@tabindex='0'][contains(.,'NEWEST')]
+  CASE_CARD_DETAILS:
+    xpath: //div[contains(@data-field,'caseCardDetails')]
+  NEEDS_REVISION_ALERT:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..
+  NEEDS_REVISION_HEADERS:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..//div[@data-section='alert-header']//span
+  NEEDS_REVISION_INFO:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..//div[contains(@data-section,'revisionInfo')]
+  REVISED_ALERT:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Revised')]/../..
+  REVISED_HEADERS:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Revised')]/../..//div[@data-section='alert-header']//span
+  REVISED_INFO:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Revised')]/../..//div[contains(@data-section,'revisionInfo')]
+  MARK_AS_RESOLVED:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..//div[contains(@data-section,'revisionInfo')]//a[contains(@data-field, 'markAsResolved')]
+  MARK_AS_RESOLVED_CHANGE_PROCEDURE_TIME:
+    xpath: //span[contains(.,'Change procedure time')]
+  MARK_AS_RESOLVED_UPDATED_INFORMATION:
+    xpath: //span[contains(.,'Updated Information')]
+  MARK_AS_RESOLVED_OTHER:
+    xpath: //span[contains(.,'Other')]
+  MARK_AS_RESOLVED_MESSAGE:
+    xpath: //textarea[contains(@id, 'message')]
+  MARK_AS_RESOLVED_BUTTON:
+    xpath: //button[contains(@id, 'saveInfo')]
+  MARK_AS_RESOLVED_CANCEL:
+    xpath: //button[contains(@id, 'cancel')]
+  filter_toggle:
+    xpath: //input[@name='myFilterToggle']

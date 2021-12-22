@@ -1,0 +1,68 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+    values:
+        ascensionidpassword: 'Welcome1@'
+        userid: 'office_scheduler@practice1.com'
+        username: 'DSSC_OFFICE_SCHEDULER'
+        fileaddedstring: 'successfully added.'
+elements:
+    ascensionidloginbutton:
+        xpath: //span[@class='sc-bdVaJa kdzqCk'][contains(.,'Log in with Ascension ID')]
+    ascensionidfield:
+        xpath: //input[contains(@id,'signInName')]
+    ascensionidpasswordfield:
+        xpath: //input[contains(@id,'password')]
+    loginbutton:
+        xpath: //button[contains(@id,'next')]
+    OfficeButton:
+       xpath: //span[contains(.,'Hi, Office')]
+    AccountSettings:
+       xpath: //div[@tabindex='0'][contains(.,'Account settings')]
+    AccountSettingsText:
+       xpath: //div[contains(@class,'sc-htpNat eglRoT jss20')]
+    MyInformation:
+       xpath: //a[@id='myInformation']
+    MyInformationDashboardText:
+       xpath: //*[@id="root"]/div/div[2]/div[2]/div/div[3]/div[2]/div[2]/div/div/div/div[1]/div/div/span
+    ChangePassword:
+       xpath: //a[@id='changePassword']
+    FullName: 
+       xpath: //span[contains(.,'Full Name')]
+    FullName_Value:
+       xpath: //span[contains(.,'Full Name')]/following-sibling::span
+    OFFICEPHONENUMBER:
+       xpath: //span[contains(.,'office phone number')]
+    OFFICEPHONENUMBER_Value:
+       xpath: //span[contains(.,'office phone number')]/following-sibling::span
+    PRACTICENAME:
+       xpath: //span[contains(.,'Practice Name')]
+    PRACTICENAME_Value:
+      xpath: //span[contains(.,'Practice Name')]/following-sibling::span
+    EMAIL: 
+       xpath: //span[contains(.,'Email')]
+    EMAIL_Value:
+      xpath: //span[contains(.,'Email')]/following-sibling::span
+ #My Surgeon Section:
+    MySurgeonsButton:
+       xpath: //a[@id='mySurgeons']
+    MySurgeonsText:
+       xpath: //span[contains(.,'My Surgeons')]
+    MySurgeonInstructionText:
+       xpath: //span[contains(.,'Select the surgeon or surgeons you will schedule most often.')]
+    SurgeonsList:
+       xpath: //*[@id="root"]/div/div[2]/div[2]/div/div[3]/div[2]/div[2]/div/div/div/div[3]/span[1]
+    FirstSurgeon:
+       xpath: //input[@id='checkbox0']
+    SecondSurgeon:
+       xpath: //input[@id='checkbox2']
+    FifthSurgeon: 
+       xpath: //input[@id='checkbox5']
+    SaveButton:
+       xpath: //button[@id='saveInfo']
+    LogoutButton:
+       xpath: //span[@data-field='logOut']
+    CHANGE_PASSWORD:
+      xpath: //a[contains(@id, 'changePassword')]
+    filter_toggle:
+      xpath: //input[@name='myFilterToggle']
+ 

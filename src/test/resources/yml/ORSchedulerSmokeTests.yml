@@ -1,0 +1,52 @@
+
+elements:
+  SPINNER:
+    xpath: //div[contains(@id, 'cover-spin')]
+  REQUESTASUURGERY:
+    xpath: //button[contains(@id, 'requestSurgery')]
+  HOMEPAGE:
+    xpath: //span[contains(text(), 'Tracker')]    
+  WARNINGS:
+    xpath: //span[contains(text(), 'Warnings')]   
+  UNSCHEDULED:
+    xpath: //span[contains(text(), 'Unscheduled')]   
+  Revised:
+    xpath: //span[contains(.,'Revised')]   
+  MESSAGES:
+    xpath: //span[contains(text(), 'Messages')]   
+  EDIT_VIEW:
+    xpath: //a[contains(text(), 'Edit view')]   
+  REVIEW_ALL_TASKS:
+    xpath:     //a[contains(text(), 'Review All Tasks')]   
+  NEXT_PAGE:
+    xpath: //a[contains(text(), 'NEXT')]   
+  PREV_PAGE:
+    xpath: //a[contains(text(), 'PREV')]   
+  DOWN_ARROW:
+    xpath: //span[contains(@data-field, 'userName')]   
+  SETTINGS:
+    xpath: //span[contains(@id, 'settings')]   
+  LOGOUT:
+    xpath: //span[contains(@data-field, 'logOut')]
+  filter_toggle:
+    xpath: //input[@name='myFilterToggle']
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

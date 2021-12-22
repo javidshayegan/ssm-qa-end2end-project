@@ -1,0 +1,53 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+    values:
+        ascensionidpassword: 'Welcome1@'
+        userid: 'office_scheduler@practice1.com'
+        username: 'DSSC_OFFICE_SCHEDULER'
+        fileaddedstring: 'successfully added.'
+elements:
+    SPINNER:
+        xpath: //div[contains(@id, 'cover-spin')]
+    ascensionidloginbutton:
+        xpath: //span[@class='sc-bdVaJa kdzqCk'][contains(.,'Log in with Ascension ID')]
+    ascensionidfield:
+        xpath: //input[contains(@id,'signInName')]
+    ascensionidpasswordfield:
+        xpath: //input[contains(@id,'password')]
+    loginbutton:
+        xpath: //button[contains(@id,'next')]
+
+    Warnings:
+        xpath: //span[contains(.,'Warnings')]
+    Warnings_Number:
+        xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[1] 
+    Warnings_ReviewAll:
+        xpath: (//span[contains(.,'Review all')])[1]
+
+    Unscheduled:
+        xpath: //span[contains(.,'Unscheduled')]
+    Unscheduled_Number:
+        xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[2] 
+    Unscheduled_ReviewAll:
+        xpath: (//span[contains(.,'Review all')])[2]
+
+    Needs Revision:
+        xpath: //span[contains(.,'Needs Revision')]
+    Needs Revision_Number:
+        xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[3] 
+    Needs Revision_ReviewAll:
+        xpath: (//span[contains(.,'Review all')])[3]
+
+    Revised:
+        xpath: //span[contains(.,'Revised')]
+    Revised_Number:
+        xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[3]
+    Revised_ReviewAll:
+        xpath: (//span[contains(.,'Review all')])[3]
+
+    Messages:
+        xpath: //span[contains(.,'Messages')]
+    Messages_Number:
+        xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[4]
+    filter_toggle:
+        xpath: //input[@name='myFilterToggle']

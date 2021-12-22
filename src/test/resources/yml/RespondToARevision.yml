@@ -1,0 +1,41 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+    values:
+        ascensionidpassword: 'Welcome1@'
+        userid: 'office_scheduler@practice1.com'
+        username: 'DSSC_OFFICE_SCHEDULER'
+        fileaddedstring: 'successfully added.'
+elements:
+    ascensionidloginbutton:
+        xpath: //span[@class='sc-bdVaJa kdzqCk'][contains(.,'Log in with Ascension ID')]
+    ascensionidfield:
+        xpath: //input[contains(@id,'signInName')]
+    ascensionidpasswordfield:
+        xpath: //input[contains(@id,'password')]
+    loginbutton:
+        xpath: //button[contains(@id,'next')]
+    #Unscheduled_Number:
+        #xpath: (//span[@class='sc-bdVaJa sc-hzDkRC GbJmZ'])[2]
+    SPINNER:
+      xpath: //div[contains(@id, 'cover-spin')]
+    NeedsRevision:
+       xpath: //span[contains(.,'Needs Revision')]
+    #NeedsRevisionWarning:
+       #xpath: //span[contains(.,'Needs Revision')]
+    MessageTitle:
+       xpath: //*[@id="root"]/div/div[2]/div[2]/div/div[3]/div/div[1]/div[1]/div[4]/div[2]/div[2]/div[2]/span[1]
+    MessageText:
+       xpath: //span[@font-size='14'][contains(.,'Cancel a procedure is requested!')]
+    MarkAsResolved:
+       xpath: (//a[contains(.,'Mark as resolved')])[1]
+    MarkasResolvedText:
+       xpath: (//span[contains(.,'Mark as Resolved')])[1]
+    Changeproceduretime:
+       xpath: (//div[@class='sc-htpNat sc-hMqMXs eyqYEX'])[1]
+    filter_toggle:
+       xpath: //input[@name='myFilterToggle']
+    MarkAsResolvedMessageBox:
+       xpath: //textarea[@name='message']
+    MarkAsResolvedButton:
+       xpath: //button[contains(@type,'submit')]
+       

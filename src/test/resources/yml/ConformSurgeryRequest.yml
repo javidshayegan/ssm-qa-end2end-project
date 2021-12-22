@@ -1,0 +1,29 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+  values:
+    FIN_NUMBER: '123456789'
+elements:
+  SPINNER:
+    xpath: //div[contains(@id, 'cover-spin')]
+  SORTBY:
+    xpath: //span[contains(.,'SORT BY')]
+  NEWEST:
+    xpath: //div[@tabindex='0'][contains(.,'NEWEST')]
+  CASE_CARD_DETAILS:
+    xpath: //div[contains(@data-field,'caseCardDetails')]
+  ALERT_BAR:
+    xpath: //div[contains(@data-section, 'caseAlertBar')]
+  UNSCHEDULED:
+    xpath: //div[contains(@data-field, 'Unscheduled')]
+  UNSCHEDULED_ALERT:
+    xpath: //span[contains(.,'UNSCHEDULED')]
+  ENTER_FIN:
+    xpath: //input[contains(@id, 'EnterFin')]
+  CONFIRM:
+    xpath: //button[contains(@id, 'Confirm')]
+  BACK_HOME:
+    xpath: //a[contains(@data-field, 'backHome')]
+  TAGS:
+    xpath: //span[contains(@data-field,'tag')]
+  filter_toggle:
+    xpath: //input[@name='myFilterToggle']

@@ -1,0 +1,29 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org'
+#url: 'https://casetracker.ascension.org'
+data:
+    values:
+        LOGIN_URL: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'       
+        OFFICE_SCHEDULER: 'dsctOFSCH1@ascension.org'
+        OFFICE_MANAGER: 'dsctOFMGR1@ascension.org'
+        OR_SCHEDULER: 'dsctORSCH1@ascension.org'
+        OFFICE_VIEWER: 'dsctOFVWR1@ascension.org'
+        OR_VIEWER: 'dsctORSCH1@ascension.org'
+        OFFICE_SCHEDULER_PASSWORD: 'B52Cgz!2'
+        OR_PASSWORD: 'f=5W-+ry'
+        ascensionidpassword: 'Welcome1@'
+        userid: 'office_scheduler@practice1.com'
+        username: 'DSSC_OFFICE_SCHEDULER'
+        fileaddedstring: 'successfully added.'
+elements:
+    SPINNER:
+        xpath: //div[contains(@id, 'cover-spin')]
+    ascensionidloginbutton:
+        xpath: //span[@class='sc-bdVaJa kdzqCk'][contains(.,'Log in with Ascension ID')]
+    ascensionidfield:
+        xpath: //input[@name='UserName']
+    ascensionidpasswordfield:
+        xpath: //input[@type='password']
+    loginbutton:
+        xpath: //span[@id = 'submitButton']
+    HEADER_SECTION_APP_TITLE:
+        xpath: //span[contains(@data-section, 'HeaderSectionAppTitle')]

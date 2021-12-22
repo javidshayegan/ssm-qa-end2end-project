@@ -1,0 +1,9 @@
+**/.DS_Store
+target/
+.DS_Store
+.classpath
+.project
+test-output/
+.idea/
+.settings/
+DSSC.iml

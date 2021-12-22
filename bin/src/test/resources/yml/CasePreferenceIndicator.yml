@@ -1,0 +1,94 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+    values:
+        ascensionidpassword: 'Welcome1@'
+        userid: 'office_scheduler@practice1.com'
+        username: 'DSSC_OFFICE_SCHEDULER'
+        fileaddedstring: 'successfully added.'
+elements:
+    SPINNER:
+        xpath: //div[contains(@id, 'cover-spin')]
+    ascensionidloginbutton:
+        xpath: //span[@class='sc-bdVaJa kdzqCk'][contains(.,'Log in with Ascension ID')]
+    ascensionidfield:
+        xpath: //input[contains(@id,'signInName')]
+    ascensionidpasswordfield:
+        xpath: //input[contains(@id,'password')]
+    loginbutton:
+        xpath: //button[contains(@id,'next')]
+    editview:
+        xpath: //a[@font-size='1'][contains(.,'Edit Filters')]
+    accountsettings:
+        xpath: //div[@data-field='shrinkable-header-text'][contains(.,'Account Settings')]
+    myinformation:
+        xpath: //span[contains(.,'my information')]
+    mypreferences:
+        xpath: //span[contains(.,'my preferences')]
+    schedulingteam:
+        xpath: //span[contains(.,'scheduling Team')]
+    surgeons:
+        xpath: //div[contains(@class='MuiBox-root jss34')]
+    myunits:
+        xpath: //span[contains(., 'My Units')]
+    Leah Cordovez_checkbox:
+        xpath: //span[contains(.,'Cordovez MD, Leah')]/..//input
+    Leah Cordovez:
+        xpath: //span[contains(.,'Cordovez MD, Leah')]
+    Thomas Dovan_checkbox:
+        xpath: //span[contains(.,'Dovan MD, Thomas')]/..//input
+    Thomas Dovan:
+        xpath: //span[contains(.,'Dovan MD, Thomas')]
+    Burton Elrod_checkbox:
+        xpath: //span[contains(.,'Elrod MD, Burton')]/..//input
+    Burton Elrod:
+        xpath: //span[contains(.,'Elrod MD, Burton')]
+    Rudolph Glattes_checkbox:
+        xpath: //span[contains(.,'Glattes MD, Rudolph')]/..//input
+    Rudolph Glattes:
+        xpath: //span[contains(.,'Glattes MD, Rudolph')]
+    Amanda Martin_checkbox:
+        xpath: //span[contains(.,'Martin DO, Amanda')]/..//input
+    Amanda Martin:
+        xpath: //span[contains(.,'Martin DO, Amanda')]
+    David Moore_checkbox:
+        xpath: //span[contains(.,'Moore MD, David')]/..//input
+    David Moore:
+        xpath: //span[contains(.,'Moore MD, David')]
+    Jeffrey Willers_checkbox:
+        xpath: //span[contains(.,'Willers MD, Jeffrey')]/..//input
+    Jeffrey Willers:
+        xpath: //span[contains(.,'Willers MD, Jeffrey')]
+    Generic_Checkbox:
+        xpath: //input[@type='checkbox']
+    BH CSC:
+        xpath: //span[contains(.,'BH CSC')]
+    BH CSC_checkbox:
+        xpath: //span[contains(.,'BH CSC')]/..//input
+    BH JRI:
+        xpath: //span[contains(.,'BH JRI')]
+    BH JRI_checkbox:
+        xpath: //span[contains(.,'BH JRI')]/..//input
+    BH OR:
+        xpath: //span[contains(.,'BH OR')]
+    BH OR_checkbox:
+        xpath: //span[contains(.,'BH OR')]/..//input
+    STM CATH:
+        xpath: //span[contains(.,'STM CATH')]
+    STM CATH_checkbox:
+        xpath: //span[contains(.,'STM CATH')]/..//input
+    STM ENDO:
+        xpath: //span[contains(.,'STM ENDO')]
+    STM ENDO_checkbox:
+        xpath: //span[contains(.,'STM ENDO')]/..//input
+    Cancel:
+        xpath: //button[@id='cancel']
+    Save:
+        xpath: //button[@id='saveInfo']
+    HOME:
+        xpath: //a[contains(.,'< Home')]
+    surgeonNames:
+        xpath: //span[@data-section='surgeonNames']
+    unitNames:
+        xpath: //span[@data-section='surgeonNames']
+    filter_toggle:
+        xpath: //input[@name='myFilterToggle']

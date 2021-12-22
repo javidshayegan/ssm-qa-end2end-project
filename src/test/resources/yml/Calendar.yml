@@ -1,0 +1,17 @@
+elements:
+  RESET_FILTER:
+    xpath: //a[contains(.,'RESET FILTERS')]
+  SPINNER:
+    xpath: //div[contains(@id, 'cover-spin')]
+  DATES:
+    xpath: //input[contains(@placeholder, 'MM / DD / YYYY')]
+  RESET:
+    xpath: //button[contains(.,'Reset')]
+  CANCEL:
+    xpath: //button[contains(.,'Cancel')]
+  APPLY:
+    xpath: //button[contains(.,'Apply')]
+  PROCEDURE_DATE:
+    xpath: (//span[contains(.,'PROCEDURE DATE')])[2]
+  filter_toggle:
+    xpath: //input[@name='myFilterToggle']

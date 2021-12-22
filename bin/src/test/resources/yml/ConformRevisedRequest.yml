@@ -1,0 +1,38 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+  values:
+    REQUEST_REVISION_HEADER: 'Request a Revision'
+    REQUEST_REVISION_DESC: 'Please provide the original scheduler with details of your revision request.'
+elements:
+  SPINNER:
+    xpath: //div[contains(@id, 'cover-spin')]
+  APPROVE:
+    xpath: //a[contains(text(),'Approve')]
+  DECLINE:
+    xpath: //a[contains(.,'Decline')]
+  REQUEST_REVISION_HEADER:
+    xpath: //span[contains(.,'Request a Revision')]
+  REQUEST_REVISION_DESC:
+    xpath: //span[contains(.,'Please provide the original scheduler with details of your revision request.')]
+  DECLINE_REASON_CHECKBOXS:
+    xpath: //input[contains(@id, 'checkbox')]
+  DECLINE_REASON_MESSAGE:
+    xpath: //textarea[contains(@id, 'message')]
+  DECLINE_REQUEST_REVISION:
+    xpath: //button[contains(@id, 'saveInfo')]
+  CASE_CARD_DETAILS:
+    xpath: //div[contains(@data-field,'caseCardDetails')]
+  REVISED_ALERT:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Revised')]
+  NEEDS_REVISION_ALERT:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..
+  NEEDS_REVISION_HEADERS:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..//div[@data-section='alert-header']//span
+  NEEDS_REVISION_INFO:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..//div[contains(@data-section,'revisionInfo')]
+  SORTBY:
+    xpath: //div[contains(@data-field, 'SORT_BY')]
+  NEWEST:
+    xpath: //div[@tabindex='0'][contains(.,'NEWEST')]
+  filter_toggle:
+    xpath: //input[@name='myFilterToggle']

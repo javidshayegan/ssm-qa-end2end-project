@@ -1,0 +1,29 @@
+elements:
+  SPINNER:
+    xpath: //div[contains(@id, 'cover-spin')]
+  SORT_BY:
+    xpath: //span[contains(.,'SORT BY')]
+  CREATED_NEWEST:
+    xpath: (//div[contains(.,'NEWEST')])[18]
+  CASE_CARD_DETAILS:
+    xpath: //div[contains(@data-field,'caseCardDetails')]
+  NEEDS_REVISION_ALERT:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..
+  NEEDS_REVISION_HEADERS:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..//div[@data-section='alert-header']//span
+  NEEDS_REVISION_INFO:
+    xpath: //div[contains(@data-section, 'revisionAlert')]//div[contains(@data-section,'alert-header')]//span[contains(.,'Needs Revision')]/../..//div[contains(@data-section,'revisionInfo')]
+  REQUEST_REVISION:
+    xpath: //a[contains(@data-section,'Requ_Rev_Con')]
+  REQUEST_REVISION_BUTTON:
+    xpath: //button[contains(@id, 'saveInfo')]
+  REQUEST_REVISION_TIME_NOT_AVAILABLE:
+    xpath: //input[contains(@id, 'checkbox0')][@name='timeNotAvailable']
+  REQUEST_REVISION_MISSING_INFORMATION:
+    xpath: //input[contains(@id, 'checkbox1')][@name='missingInfo']
+  REQUEST_REVISION_OTHER:
+    xpath: //input[contains(@id, 'checkbox2')][@name='other']
+  REQUEST_REVISION_MESSAGE:
+    xpath: //textarea[contains(@id, 'message')]
+  filter_toggle:
+    xpath: //input[@name='myFilterToggle']

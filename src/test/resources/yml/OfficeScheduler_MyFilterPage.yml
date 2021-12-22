@@ -1,0 +1,34 @@
+url: 'https://casetracker-qa.app.cloud-02.pcf.ascension.org/login'
+data:
+  values:
+    ascensionidpassword: 'B52Cgz!2'
+    userid: 'dsctOFSCH1@ascension.org'
+    username: 'DSSC_OFFICE_SCHEDULER'
+    fileaddedstring: 'successfully added.'
+elements:
+  editfilters:
+    xpath: //a[contains(.,'Edit Filters')]
+  sortbyheader:
+    xpath: //span[contains(.,'SORT BY')]
+  proceduredateheader:
+    xpath: (//span[contains(.,'PROCEDURE DATE')])[2]
+  surgeonsheader:
+    xpath: //div[@class='MuiBox-root jss33'][contains(.,'Surgeons')]
+  otherfiltersheader:
+    xpath: //div[@font-size='18'][contains(.,'Other Filters')]
+  sortbynearest:
+    xpath: //div[@tabindex='0'][contains(.,'NEAREST')]
+  sortbyfurthest:
+    xpath: //span[contains(.,'FURTHEST')]
+  savebutton:
+    xpath: //span[contains(.,'Save')]
+  filtersavedmessage:
+    xpath: //span[contains(.,'Success you saved your filters')]
+  proceduredatedefault:
+    xpath: //span[@font-size='1'][contains(.,'ANY')]
+  proceduredatetoday:
+    xpath: //div[@tabindex='0'][contains(.,'TODAY')]
+  firstsurgeoncheckbox:
+    xpath: (//input[contains(@data-indeterminate,'false')])[2]
+  otherfilterbookmarked:
+    xpath: //input[contains(@value,'BOOKMARKED')]
